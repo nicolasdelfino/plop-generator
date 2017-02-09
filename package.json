@@ -1,0 +1,14 @@
+{
+  "name": "react-component-generator",
+  "version": "1.0.0",
+  "description": "generates components",
+  "main": "index.js",
+  "scripts": {
+    "generate": "plop --plopfile config/generators/index.js"
+  },
+  "author": "Nicolas Delfino",
+  "license": "ISC",
+  "devDependencies": {
+    "plop": "1.7.3"
+  }
+}

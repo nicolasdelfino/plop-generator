@@ -1,0 +1,27 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+import React from 'react';
+
+{{#if wantSomething}}
+import { somethingSpecial } from './special';
+{{/if}}
+
+class {{ properCase name }} extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> {{ properCase name }} </h1>
+      </div>
+    );
+  }
+}
+
+{{ properCase name }}.propTypes = {
+
+};
+
+export default {{ properCase name }};
