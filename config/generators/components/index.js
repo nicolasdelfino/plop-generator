@@ -14,16 +14,16 @@ module.exports = {
     type: 'list',
     name: 'type',
     message: 'Select the type of component',
-    default: 'Stateless Function',
+    default: 'type 1',
     choices: () => ['type 1', 'type 2', 'type 3'],
   }, {
     type: 'input',
     name: 'name',
     message: 'What should it be called?',
-    default: 'Button',
+    default: 'plop',
     validate: (value) => {
       if ((/.+/).test(value)) {
-        return componentExists(value) ? 'A component or container with this name already exists' : true;
+        return componentExists(value) ? 'A component or something with this name already exists' : true;
       }
 
       return 'The name is required';
@@ -68,7 +68,7 @@ module.exports = {
       actions.push({
         type: 'add',
         path: '../../app/components/{{properCase name}}/special.js',
-        templateFile: './templates/special.js.hbs',
+        templateFile: './components/templates/special.js.hbs',
         abortOnFail: true,
       });
     }
